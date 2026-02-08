@@ -688,6 +688,117 @@
                 transform: scale(0.8);
                 /* Scale down iframes on very small screens */
             }
+
+        }
+
+        /* App Grid */
+        .app-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .app-card {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 1rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .app-header {
+            padding: 1rem;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .app-title {
+            margin: 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .app-author {
+            font-size: 0.8rem;
+            color: var(--cp-text);
+        }
+
+        .app-body {
+            display: flex;
+            padding: 1rem;
+            gap: 1.5rem;
+            flex: 1;
+        }
+
+        .app-image {
+            width: 240px;
+            height: 396px;
+            /* Ratio close to 320x528 approx 0.75 scale */
+            background-size: cover;
+            background-position: center;
+            border-radius: 2px;
+            flex-shrink: 0;
+            background-color: #333;
+        }
+
+        .app-details {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .app-description {
+            font-size: 0.9rem;
+            color: var(--cp-text);
+            margin-bottom: 1rem;
+            flex: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 14;
+            line-clamp: 14;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .app-actions {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .app-btn {
+            padding: 0.5rem 1rem;
+            font-size: 0.8rem;
+            text-align: center;
+            flex: 1;
+            min-width: 80px;
+        }
+
+        @media (max-width: 600px) {
+            .app-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .app-body {
+                flex-direction: column;
+            }
+
+            .app-image {
+                width: 100%;
+                height: 300px;
+                background-position: top center;
+            }
         }
     </style>
     <script src="https://analytics.ahrefs.com/analytics.js" data-key="Kb2nywKkyR+dD+Av2GmerQ" async></script>
@@ -707,6 +818,7 @@
                     <div class="hero-buttons">
                         <a href="#download" class="btn btn-primary">Get It Now!</a>
                         <a href="#learn-more" class="btn btn-secondary">Learn More</a>
+                        <a href="store/" class="btn btn-secondary">Apps</a>
                     </div>
                 </div>
                 <div class="hero-image">
@@ -884,6 +996,7 @@
                 <p class="section-subtitle">An expanding ecosystem of Python-powered experiences</p>
             </div>
             <div class="features-grid">
+                <!-- Classic Games -->
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -899,8 +1012,10 @@
                     <h3 class="feature-title">Classic Games</h3>
                     <p class="feature-description">Enjoy Python ports of timeless classics like Snake, optimized for the
                         ClassPad's screen and controls.</p>
+                    <a href="store/index.html?type=classic" class="feature-link">Browse Classic Games →</a>
                 </div>
 
+                <!-- Educational Tools -->
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -914,8 +1029,10 @@
                     <h3 class="feature-title">Educational Tools</h3>
                     <p class="feature-description">Powerful math and science applications that uses Python's
                         computational capabilities for advanced calculations and visualizations.</p>
+                    <a href="store/index.html?type=education" class="feature-link">Browse Education Apps →</a>
                 </div>
 
+                <!-- App Store -->
                 <div class="feature-card">
                     <div class="feature-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -923,23 +1040,11 @@
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <h3 class="feature-title">Coming Soon: App Store</h3>
-                    <p class="feature-description">An official ClassPad Python App Store is launching soon, making it
-                        easier than ever to discover and install new programs.</p>
+                    <h3 class="feature-title">App Store</h3>
+                    <p class="feature-description">Discover and install new programs from our official App Store
+                        repository.</p>
+                    <a href="store/index.html" class="feature-link">Browse All Apps →</a>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Apps Table Section -->
-    <section class="section dark-section">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Available Apps & Games</h2>
-                <p class="section-subtitle">Explore the growing collection of Python applications</p>
-            </div>
-            <div id="apps-container">
-                <div class="loading">Loading apps...</div>
             </div>
         </div>
     </section>
@@ -1068,80 +1173,6 @@
                 const version = encodeURIComponent(saveName || 'PythonExtra.bin');
                 window.location.href = '/python/install-guide?version=' + version;
             }, 500);
-        }
-
-        document.addEventListener('DOMContentLoaded', function () {
-            fetch('apps.json') // Adjust path if hosted elsewhere
-                .then(response => {
-                    if (!response.ok) {
-                        throw new Error('Failed to load app data');
-                    }
-                    return response.json();
-                })
-                .then(data => {
-                    renderAppsTable(data);
-                })
-                .catch(error => {
-                    console.error('Error loading app data:', error);
-                    const container = document.getElementById('apps-container');
-                    container.innerHTML = '<div class="loading">Failed to load apps.</div>';
-                });
-        });
-
-        function renderAppsTable(apps) {
-            const container = document.getElementById('apps-container');
-
-            if (apps.length === 0) {
-                container.innerHTML = '<div class="loading">No apps available yet. Check back soon!</div>';
-                return;
-            }
-
-            let tableHTML = `
-                <table class="apps-table">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Author</th>
-                            <th>Release Date</th>
-                            <th>Description</th>
-                            <th>Installation</th>
-                            <th>Download</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-            `;
-
-            // Add placeholder for app store
-            tableHTML += `
-                <tr>
-                    <td>Store (Coming Soon)</td>
-                    <td>ClassPad.Dev Team</td>
-                    <td>TBD</td>
-                    <td>Browse and install apps to your ClassPad</td>
-                    <td>N/A</td>
-                    <td><a href="/app-store">Learn More</a></td>
-                </tr>
-            `;
-
-            apps.forEach(app => {
-                tableHTML += `
-                    <tr>
-                        <td>${app.name}</td>
-                        <td>${app.author}</td>
-                        <td>${app.releaseDate}</td>
-                        <td>${app.description}</td>
-                        <td><a href="${app.installation}">Guide</a></td>
-                        <td><a href="${app.download}">Download</a></td>
-                    </tr>
-                `;
-            });
-
-            tableHTML += `
-                    </tbody>
-                </table>
-            `;
-
-            container.innerHTML = tableHTML;
         }
     </script>
 

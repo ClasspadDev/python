@@ -1,0 +1,99 @@
+[
+    {
+        "name": "EndlessBrickBreakerPlus",
+        "description": "An endless brick breaker game that has also upgrades",
+        "author": "Henry",
+        "releaseDate": "2025-04-18",
+        "installation": "https://github.com/ClasspadDev/EndlessBrickBreakerPlus/",
+        "download": "https://raw.githubusercontent.com/ClasspadDev/EndlessBrickBreakerPlus/refs/heads/main/EndlessBrickBreakerPlus.py",
+        "image": "images/EndlessBrickBreakerPlus/cover.png",
+        "tags": [
+            "Game",
+            "Action",
+            "Classic"
+        ]
+    },
+    {
+        "name": "Templar",
+        "description": "The knight guardian of the temple does not want to turn into an undead creature and must therefore keep himself in shape.",
+        "author": "Lephenixnoir",
+        "releaseDate": "2025-04-27",
+        "installation": "https://www.planet-casio.com/Fr/programmes/programme4545-1-templar-lephenixnoir-jeux-actionsport.html",
+        "download": "https://git.planet-casio.com/Lephenixnoir/templar/archive/main.zip",
+        "image": "images/Templar/cover.png",
+        "tags": [
+            "Game",
+            "Adventure",
+            "RPG"
+        ]
+    },
+    {
+        "name": "Lento pero seguro",
+        "description": "Slow but Steady",
+        "author": "Vitucho",
+        "releaseDate": "2025-04-27",
+        "installation": "https://www.planet-casio.com/Fr/programmes/programme4585-last-lento-pero-seguro-vitucho-jeux-actionsport.html",
+        "download": "https://www.planet-casio.com/Fr/programmes/programme4585-last-lento-pero-seguro-vitucho-jeux-actionsport.html",
+        "image": "images/Lento_pero_seguro/cover.png",
+        "tags": [
+            "Game",
+            "Platformer",
+            "Action"
+        ]
+    },
+    {
+        "name": "EncloseHorse",
+        "description": "Enclose the horse in the biggest possible pen! Click grass tiles to place walls. You have limited walls. Horses can't move diagonally or over water. Enclosed golden apples give +10! Portals connect distant cells - the horse can teleport through them! Bigger enclosure = bigger score, but you only have one chance to submit!",
+        "author": "Phoebe",
+        "releaseDate": "2025-05-15",
+        "installation": "https://github.com/TheRainbowPhoenix/enclose.horse",
+        "download": "https://github.com/TheRainbowPhoenix/enclose.horse/releases/download/1.0/mhorse.py",
+        "image": "images/EncloseHorse/cover.png",
+        "tags": [
+            "Game",
+            "Puzzle",
+            "Strategy"
+        ]
+    },
+    {
+        "name": "TempleWarriors",
+        "description": "Your mission is clear: protect the three crystals hidden in the temple at all costs.",
+        "author": "Farhi",
+        "releaseDate": "2025-04-27",
+        "installation": "https://www.planet-casio.com/Fr/programmes/programme4546-1-templewarriors-farhi-jeux-strategie.html",
+        "download": "https://www.planet-casio.com/Fr/programmes/programme4546-1-templewarriors-farhi-jeux-strategie.html",
+        "image": "images/TempleWarriors/cover.png",
+        "tags": [
+            "Game",
+            "Strategy"
+        ]
+    },
+    {
+        "name": "Temple of the Spiral Serpent",
+        "description": "DOS-like exploration game",
+        "author": "Phoebe",
+        "releaseDate": "2025-04-27",
+        "installation": "Hollyhock-2",
+        "download": "https://github.com/TheRainbowPhoenix/ruins-explorer/releases/download/1.0/TOSS.zip",
+        "image": "images/Temple_of_the_Spiral_Serpent/cover.png",
+        "tags": [
+            "Game",
+            "Exploration",
+            "RPG"
+        ]
+    },
+    {
+        "name": "Meroes Golem",
+        "description": "Small paltformer game",
+        "author": "Killfaeh",
+        "releaseDate": "2025-04-27",
+        "installation": "https://github.com/Killfaeh/MeroesGolem/tree/main",
+        "download": "https://github.com/Killfaeh/MeroesGolem/raw/refs/heads/main/meroe2.zip",
+        "image": "images/MeroesGolem/cover.png",
+        "tags": [
+            "Game",
+            "Platformer",
+            "Action"
+        ]
+    }
+]
