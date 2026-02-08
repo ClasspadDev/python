@@ -543,7 +543,11 @@
         let currentLineIndex = 0;
 
         function typeLine() {
-            if (currentLineIndex >= lines.length) return;
+            if (currentLineIndex >= lines.length) {
+                // Restart after 60 seconds
+                setTimeout(restartTutorial, 60000);
+                return;
+            }
 
             const lineNode = lines[currentLineIndex].cloneNode(true);
 
@@ -555,7 +559,10 @@
             lineNode.classList.add('cursor');
             if (currentLineIndex > 0) {
                 // Remove cursor from previous line
-                codePanel.children[currentLineIndex - 1].classList.remove('cursor');
+                // Check if previous sibling exists just in case
+                if (codePanel.children[currentLineIndex - 1]) {
+                    codePanel.children[currentLineIndex - 1].classList.remove('cursor');
+                }
             }
 
             codePanel.appendChild(lineNode);
@@ -581,6 +588,25 @@
 
             // Next line
             setTimeout(typeLine, delay);
+        }
+
+        function restartTutorial() {
+            // Reset State
+            isSimulating = false;
+            x = 50;
+            y = 50;
+            dx = 2;
+            dy = 2;
+            currentLineIndex = 0;
+
+            // Clear Code Panel
+            codePanel.innerHTML = '';
+
+            // Reset Screen
+            clearScreen();
+
+            // Start typing again
+            setTimeout(typeLine, 500);
         }
 
         // Start

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,37 +16,44 @@
             font-family: monospace;
             color: #888;
         }
+
         #calculator-bezel {
             background-color: #e0e0e0;
             padding: 20px;
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
             display: flex;
             flex-direction: column;
             align-items: center;
         }
+
         canvas {
             background-color: #000;
             border: 2px solid #999;
             /* Ensures crisp scaling on high-DPI screens */
-            image-rendering: pixelated; 
+            image-rendering: pixelated;
             image-rendering: crisp-edges;
             width: 320px;
             height: 528px;
-            box-shadow: inset 0 0 10px rgba(0,0,0,0.8);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.8);
         }
+
         .controls {
             margin-top: 10px;
             font-size: 12px;
         }
+
+        html {
+            overflow: hidden;
+        }
     </style>
 </head>
+
 <body>
 
     <div id="calculator-bezel">
         <!-- Canvas size matches calculator resolution exactly -->
         <canvas id="screen" width="320" height="528"></canvas>
-        <div class="controls">PythonExtra JS Simulator • 320x528</div>
     </div>
 
     <script>
@@ -124,8 +132,8 @@
 
         function dtext_opt(x, y, fg, bg, halign, valign, text) {
             ctx.font = '16px "Courier New", monospace';
-            ctx.textAlign = halign; 
-            
+            ctx.textAlign = halign;
+
             if (valign === DTEXT_TOP) ctx.textBaseline = 'top';
             else if (valign === DTEXT_BOTTOM) ctx.textBaseline = 'bottom';
             else ctx.textBaseline = 'middle';
@@ -141,13 +149,13 @@
         // 3D Cube Data
         const VERTICES = [
             [-1, -1, -1], [1, -1, -1], [1, 1, -1], [-1, 1, -1],
-            [-1, -1, 1],  [1, -1, 1],  [1, 1, 1],  [-1, 1, 1]
+            [-1, -1, 1], [1, -1, 1], [1, 1, 1], [-1, 1, 1]
         ];
 
         const EDGES = [
-            [0,1], [1,2], [2,3], [3,0],
-            [4,5], [5,6], [6,7], [7,4],
-            [0,4], [1,5], [2,6], [3,7]
+            [0, 1], [1, 2], [2, 3], [3, 0],
+            [4, 5], [5, 6], [6, 7], [7, 4],
+            [0, 4], [1, 5], [2, 6], [3, 7]
         ];
 
         // State variables
@@ -184,7 +192,7 @@
                 let ny = x * s + y * c;
                 x = nx; y = ny;
             }
-            return {x, y, z};
+            return { x, y, z };
         }
 
         // Animation Loop Control
@@ -225,7 +233,7 @@
             // Background Grid
             const grid_col = C_RGB(6, 6, 6);
             const grid_speed = (t * 50) % 40;
-            
+
             for (let i = 0; i < HEIGHT / 2; i += 40) {
                 const y_pos = HEIGHT - i + grid_speed;
                 if (y_pos < HEIGHT) {
@@ -242,13 +250,13 @@
             for (let v of VERTICES) {
                 const p = rotate_point(v[0], v[1], v[2], angle_x, angle_y, angle_z);
                 const dist = 4;
-                const z_factor = 1 / (dist - p.z); 
+                const z_factor = 1 / (dist - p.z);
 
                 // Floor coordinates for pixel perfection
                 const px = Math.floor(p.x * scale_base * z_factor + CX);
                 const py = Math.floor(p.y * scale_base * z_factor + CY + y_offset);
 
-                projected_points.push({x: px, y: py});
+                projected_points.push({ x: px, y: py });
             }
 
             for (let edge of EDGES) {
@@ -277,4 +285,5 @@
 
     </script>
 </body>
+
 </html>
