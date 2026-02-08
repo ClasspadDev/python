@@ -707,21 +707,20 @@
                     </div>
                     <h3 class="download-title">HollyHock 2 (Latest)</h3>
                     <p class="download-description">The stable and recommended version with full Python support and extensive library compatibility.</p>
-                    <a href="/python/install-guide" class="btn btn-primary btn-download" onclick="downloadFile('/python/PythonExtra-hh2.bin')">Download Now</a>
-                    <!-- TODO: the file would need to be pulled from relase later... -->
+                    <a href="/python/install-guide" class="btn btn-primary btn-download" onclick="downloadFile('/python/PythonExtra-hh2.bin', 'PythonExtra.bin'); return false;">Download Now</a>
                 </div>
                 
                 <div class="download-card">
-                    <div class="download-icon" style="opacity: 0.5;">
+                    <div class="download-icon">
                         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="download-title">HollyHock 3</h3>
-                    <p class="download-description">The next-generation version with experimental features. Coming soon!</p>
-                    <button class="btn btn-disabled btn-download" disabled>Coming Soon</button>
+                    <h3 class="download-title">HollyHock 3 (Beta)</h3>
+                    <p class="download-description">The next-generation version with experimental features. Now available for testing.</p>
+                    <a href="/python/install-guide" class="btn btn-primary btn-download" onclick="downloadFile('/python/PythonExtra.hh3', 'PythonExtra.hh3'); return false;">Download Beta</a>
                 </div>
             </div>
         </div>
@@ -968,11 +967,11 @@
     </footer>
 
     <script>
-        function downloadFile(url) {
+        function downloadFile(url, saveName) {
             // Simulate download
             const link = document.createElement('a');
             link.href = url;
-            link.download = 'PythonExtra.bin';
+            link.download = saveName || 'PythonExtra.bin'; // Use provided name or fallback
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
