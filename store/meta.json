@@ -83,6 +83,19 @@
         ]
     },
     {
+        "name": "PickCross",
+        "description": "Picross game",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-08",
+        "installation": "https://github.com/TheRainbowPhoenix/PickCross",
+        "download": "https://github.com/TheRainbowPhoenix/PickCross/releases/download/1.0/pickcross.py",
+        "image": "images/PickCross/cover.png",
+        "tags": [
+            "Game",
+            "Puzzle"
+        ]
+    },
+    {
         "name": "Meroes Golem",
         "description": "Small paltformer game",
         "author": "Killfaeh",
