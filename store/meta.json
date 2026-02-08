@@ -153,5 +153,19 @@
             "AI",
             "Education"
         ]
+    },
+    {
+        "name": "Asteroids",
+        "description": "The game is ultra minimalistic (white and black with only wireframe) but kinda fast and addictive.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-08",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/asteroids.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/asteroids.py",
+        "image": "images/Asteroids/cover.png",
+        "tags": [
+            "Game",
+            "Action",
+            "Classic"
+        ]
     }
 ]
