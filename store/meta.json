@@ -108,5 +108,48 @@
             "Platformer",
             "Action"
         ]
+    },
+    {
+        "name": "Mandelbrot",
+        "description": "A Mandelbrot set renderer for ClassPad, visualizing the famous fractal.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-08",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/render_mandelbrot.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/render_mandelbrot.py",
+        "image": "images/Mandelbrot/cover.png",
+        "tags": [
+            "Graphics",
+            "Math",
+            "Demo"
+        ]
+    },
+    {
+        "name": "Raytracer",
+        "description": "A simple raytracer implemented in Python, demonstrating 3D rendering capabilities.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-08",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/render_raytracer.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/render_raytracer.py",
+        "image": "images/Raytracer/cover.png",
+        "tags": [
+            "Graphics",
+            "Math",
+            "Demo"
+        ]
+    },
+    {
+        "name": "PocketNN",
+        "description": "A simple neural network that learns to solve the XOR problem visually. It uses a pre-calculated Float Lookup Table (LUT) for the Sigmoid function and unrolled loops for the forward/backward propagation to maximize speed on the SH4 CPU.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-08",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/neuro.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/neuro.py",
+        "image": "images/PocketNN/cover.png",
+        "tags": [
+            "Math",
+            "Demo",
+            "AI",
+            "Education"
+        ]
     }
 ]
