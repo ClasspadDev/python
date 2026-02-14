@@ -170,7 +170,7 @@
     },
     {
         "name": "CED",
-        "description": "Classpad Editor - A Python code editor for the calculadora.",
+        "description": "Classpad Editor - A Python code editor for the calculator. Needs cinput.",
         "author": "Phoebe",
         "releaseDate": "2026-02-09",
         "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/ced_new.py",
@@ -179,6 +179,20 @@
         "tags": [
             "Tool",
             "Development"
+        ]
+    },
+    {
+        "name": "HarmoniExtra",
+        "description": "A music chord viewer for Classpad. Needs cinput.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-15",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/HarmoniExtra.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/HarmoniExtra.py",
+        "image": "images/HarmoniExtra/cover.png",
+        "tags": [
+            "Tool",
+            "Music",
+            "Education"
         ]
     }
 ]
