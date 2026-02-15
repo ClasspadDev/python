@@ -194,5 +194,19 @@
             "Music",
             "Education"
         ]
+    },
+    {
+        "name": "CPaint",
+        "description": "A paint program for Classpad. Needs cinput and cgui.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-14",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/CPaint.md#cpaint",
+        "download": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/releases/download/rolling-releases/cpaint-beta.zip",
+        "image": "images/CPaint/cover.png",
+        "tags": [
+            "Tool",
+            "Art",
+            "Education"
+        ]
     }
 ]
