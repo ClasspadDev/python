@@ -177,7 +177,7 @@
         "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/ced_new.py",
         "image": "images/CED/cover.png",
         "tags": [
-            "Tool",
+            "Utility",
             "Development"
         ]
     },
@@ -190,7 +190,7 @@
         "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/HarmoniExtra.py",
         "image": "images/HarmoniExtra/cover.png",
         "tags": [
-            "Tool",
+            "Utility",
             "Music",
             "Education"
         ]
@@ -204,8 +204,9 @@
         "download": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/releases/download/rolling-releases/cpaint-beta.zip",
         "image": "images/CPaint/cover.png",
         "tags": [
-            "Tool",
+            "Utility",
             "Art",
+            "Graphics",
             "Education"
         ]
     }
