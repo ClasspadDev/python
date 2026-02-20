@@ -209,5 +209,18 @@
             "Graphics",
             "Education"
         ]
+    },
+    {
+        "name": "CPTime",
+        "description": "A Clock (StopWatch, Timer) for Classpad. ",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-20",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/cptime_view.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/refs/heads/master/cptime_view.py",
+        "image": "images/CPTime/cover.png",
+        "tags": [
+            "Utility",
+            "Education"
+        ]
     }
 ]
