@@ -277,5 +277,18 @@
             "Demo",
             "Education"
         ]
+    },
+    {
+        "name": "PhysChem",
+        "description": "Physics/Chemistry solver app. Needs CInput.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-22",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/physchem.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/physchem.py",
+        "image": "images/PhysChem/cover.png",
+        "tags": [
+            "Physics_Chemistry",
+            "Education"
+        ]
     }
 ]
