@@ -169,8 +169,21 @@
         ]
     },
     {
+        "name": "CInput",
+        "description": "Standalone library to add touchscreen keyboard. Check the wiki for more details",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-08",
+        "installation": "https://classpaddev.github.io/wiki/python/reference/cinput/",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/cinput.py",
+        "image": "images/CInput/cover.png",
+        "tags": [
+            "Utility",
+            "Development"
+        ]
+    },
+    {
         "name": "CED",
-        "description": "Classpad Editor - A Python code editor for the calculator. Needs cinput.",
+        "description": "Classpad Editor - A Python code editor for the calculator. Needs CInput.",
         "author": "Phoebe",
         "releaseDate": "2026-02-09",
         "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/ced_new.py",
@@ -183,7 +196,7 @@
     },
     {
         "name": "HarmoniExtra",
-        "description": "A music chord viewer for Classpad. Needs cinput.",
+        "description": "A music chord viewer for Classpad. Needs CInput.",
         "author": "Phoebe",
         "releaseDate": "2026-02-15",
         "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/HarmoniExtra.py",
@@ -220,6 +233,48 @@
         "image": "images/CPTime/cover.png",
         "tags": [
             "Utility",
+            "Education"
+        ]
+    },
+    {
+        "name": "CDateInput",
+        "description": "Standalone library to add date and time picking. Needs CInput.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-22",
+        "installation": "https://classpaddev.github.io/wiki/python/reference/cinput/",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/cdateinput.py",
+        "image": "images/CDateInput/cover.png",
+        "tags": [
+            "Utility",
+            "Development"
+        ]
+    },
+    {
+        "name": "Math AI MoE",
+        "description": "A Mixture of Experts LLM for Classpad. Made to explain how MoE works. Needs CInput.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-20",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/MathGPT.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/master/MathGPT.py",
+        "image": "images/MathGPT/cover.png",
+        "tags": [
+            "Math",
+            "Demo",
+            "AI",
+            "Education"
+        ]
+    },
+    {
+        "name": "QR Code Generator",
+        "description": "Pocket QR Code generator for the Classpad. Needs CInput.",
+        "author": "Phoebe",
+        "releaseDate": "2026-02-22",
+        "installation": "https://github.com/TheRainbowPhoenix/MiscPythonExtra/blob/master/qr_gen.py",
+        "download": "https://raw.githubusercontent.com/TheRainbowPhoenix/MiscPythonExtra/refs/heads/master/qr_gen.py",
+        "image": "images/QRGen/cover.png",
+        "tags": [
+            "Utility",
+            "Demo",
             "Education"
         ]
     }
